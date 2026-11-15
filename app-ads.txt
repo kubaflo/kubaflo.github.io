@@ -1,4 +1,4 @@
-# app-ads.txt for florekgames.pl (Florek Games)
+# app-ads.txt for Florek Games (developer website: https://kubaflo.github.io)
 # Google AdMob – publisher pub-3335358119261286
 google.com, pub-3335358119261286, DIRECT, f08c47fec0942fa0
 

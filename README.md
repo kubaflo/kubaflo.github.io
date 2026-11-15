@@ -1,4 +1,8 @@
-# florekgames.pl on GitHub Pages
+# Florek Games website (GitHub Pages)
 
-Static mirror of https://florekgames.pl (Florek Games): game pages, privacy policies and `app-ads.txt`.
-Served by GitHub Pages. Privacy policy pages live at the site root (`privacy_policy_*.html`).
+Served at https://kubaflo.github.io/ — the developer website for all Florek Games apps.
+
+- `app-ads.txt` at the site root (AdMob publisher pub-3335358119261286). Store listings must use
+  `https://kubaflo.github.io` as the developer / marketing website for AdMob to find it.
+- Privacy policies: `https://kubaflo.github.io/privacy_policy_<app>.html` (see STATUS.md for the per-app list).
+- Game pages and other files were copied unchanged from the old florekgames.pl site (2026-11-15).
