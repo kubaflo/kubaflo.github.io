@@ -65,3 +65,25 @@ AdMob re-crawls within ~24 h (App Store changes can take up to 7 days).
 1. Store listings (all apps above): developer website → https://kubaflo.github.io, privacy policy → URL from the table.
 2. AdMob consent messages (Privacy & messaging): change privacy URLs from florekgames.pl/... to kubaflo.github.io/... (owned by the other session).
 3. AdMob → Apps → app-ads.txt → re-check after listings change.
+
+## Store listing changes done (2026-11-15) — most recently updated apps only
+Google Play (developer website → http://kubaflo.github.io, privacy URL → kubaflo.github.io):
+| App | Website | Privacy URL |
+|---|---|---|
+| 2 Player Basketball: Hoops Cup (draft) | saved | already set (by Hoops Cup session) |
+| 1 2 3 4 Player Soccer Offline / Kick Clash (draft) | saved | saved |
+| 2 3 4 Player Games: Hero Party / Capes Up (draft) | saved | saved |
+| 2 3 4 Soccer Games (live) | published | sent for review |
+| Jaka To Piosenka? Zgadnij hit (live) | published | sent for review |
+| Jaka To Piosenka quiz muzyczny (live) | published | sent for review |
+| 2 3 4 Heroes: 2 Player Games (live) | published | sent for review |
+| 2 3 4 Player Basketball Games (removed, reinstatement in review) | published | saved, NOT sent: sending would restart the review running since Nov 14 |
+
+App Store Connect:
+| App | Marketing + Support URL | Privacy URL |
+|---|---|---|
+| 2 3 4 Heroes Games (v2 rejected) | saved on v2 | saved ("Edited", ships with v2) |
+| Jaka To Piosenka? Zgadnij hit (1.0.0 waiting for review) | saved | saved |
+| 2 3 4 Soccer, 2 3 4 Basketball, Jaka To Piosenka? (iOS, live) | needs a new app version | needs a new app version (Apple locks it) |
+
+Note: iOS App Privacy for Heroes and Soccer says "Data Not Collected", which does not match AdMob usage.
