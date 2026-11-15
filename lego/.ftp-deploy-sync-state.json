@@ -1,0 +1,161 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1703086342083,
+    "data": [
+        {
+            "type": "file",
+            "name": ".htaccess",
+            "size": 176,
+            "hash": "046bbcf864a2eeb48a8ebe79ff7b0731bf8277d5624f571c86e9270c70f9b2e4"
+        },
+        {
+            "type": "file",
+            "name": "asset-manifest.json",
+            "size": 1325,
+            "hash": "d6d002eb61071b9c052de99815db814819d7ca0ef7cd7e7dff08738696305ae1"
+        },
+        {
+            "type": "file",
+            "name": "favicon.ico",
+            "size": 7908,
+            "hash": "f581c6d01fef2bd53b7ab43c5bf4a4aeac1aac7d9b8695911adac3bc15ff1b6b"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 1383,
+            "hash": "52659211ae8eba2cc3b264737f3ca6a2cf003f768d722c61f314d2256935d354"
+        },
+        {
+            "type": "file",
+            "name": "logo192.png",
+            "size": 30800,
+            "hash": "93c5187f92003a473967d7627ebfa644ea0fc04743d45ab18c0be09f4e5aa000"
+        },
+        {
+            "type": "file",
+            "name": "logo512.png",
+            "size": 124244,
+            "hash": "6b209164e8538c670dd75fe30e12e46f31b2f29c6c2894ead511ed5e72f89602"
+        },
+        {
+            "type": "file",
+            "name": "manifest.json",
+            "size": 495,
+            "hash": "1f265bc1d598a1db55d3a42c83a99a98417c8c7ff71cdef3ce8f41656512d2f1"
+        },
+        {
+            "type": "folder",
+            "name": "static"
+        },
+        {
+            "type": "folder",
+            "name": "static/css"
+        },
+        {
+            "type": "folder",
+            "name": "static/js"
+        },
+        {
+            "type": "folder",
+            "name": "static/media"
+        },
+        {
+            "type": "file",
+            "name": "static/css/main.722de7fa.css",
+            "size": 32938,
+            "hash": "a74e0df1a528f2b043adea793fb52ced6a6af69427ebd88290f4c4249eb4bb0a"
+        },
+        {
+            "type": "file",
+            "name": "static/css/main.722de7fa.css.map",
+            "size": 64143,
+            "hash": "d508a08a7d3eb4624f3733a9c376cf345bfa81838de15c8e132e6beae2b3394d"
+        },
+        {
+            "type": "file",
+            "name": "static/js/main.b3306ffe.js",
+            "size": 347713,
+            "hash": "3bee8be1b3721131f0822748871a67b4fc7bc40a6c3bf321f290d46b4e75502f"
+        },
+        {
+            "type": "file",
+            "name": "static/js/main.b3306ffe.js.LICENSE.txt",
+            "size": 1652,
+            "hash": "22f06d09db4de3163f56c507852d778a3fe8b8c7c6ca325c7b95f28563650f1f"
+        },
+        {
+            "type": "file",
+            "name": "static/js/main.b3306ffe.js.map",
+            "size": 1267616,
+            "hash": "6df3925a9cb08ab919d88f05427bf373ec5e1dbf2c4fe1ed6bfad32b63bb3059"
+        },
+        {
+            "type": "file",
+            "name": "static/media/adults.72c1c740b1a7965b15cc.png",
+            "size": 38974,
+            "hash": "4c9d83a56ffcf68ea1d4047e8a2603faadc531b2c1d743527c086fb8eea06d66"
+        },
+        {
+            "type": "file",
+            "name": "static/media/cerapro-bold.23dd9a3e7a1b992dedb7.otf",
+            "size": 189056,
+            "hash": "ca2bcc9e894e0a755a49f8d264bed726717c0033e6f2dcc8e888bf80ac57bbaa"
+        },
+        {
+            "type": "file",
+            "name": "static/media/cerapro-light.e46c8e0b3ab25af6d9eb.otf",
+            "size": 185224,
+            "hash": "51678261b34255f1b6aa36b5ec12956d44cf63162f8e86cb838594484148fe2d"
+        },
+        {
+            "type": "file",
+            "name": "static/media/cerapro-medium.2bc02ae84a1e73c231d6.otf",
+            "size": 187396,
+            "hash": "68415c8ecee10d8cbab1ded06c092c8352ca0ba608e0c01ea5f0d37a358f92e0"
+        },
+        {
+            "type": "file",
+            "name": "static/media/kids.c7bd18d008485f41f30d.png",
+            "size": 56760,
+            "hash": "836e8e1c2314c461129a20b0b1f7ce0330807609c32231124b66806e0a2bb0ea"
+        },
+        {
+            "type": "file",
+            "name": "static/media/lego-regular.84328578b281e20a0577.ttf",
+            "size": 70412,
+            "hash": "3176a158d66f060587d326d2dae3641212e99dbb3296f043fb8cc157411e0f45"
+        },
+        {
+            "type": "file",
+            "name": "static/media/legoBricks.ffb3b65c5b9d71f42813.png",
+            "size": 267963,
+            "hash": "da062e1713cd9339b5a2e1442ce833090ebb3da3a6dd078ec3c38ea0d16b0cac"
+        },
+        {
+            "type": "file",
+            "name": "static/media/legoman.9eb0129459344d877a4e.jpg",
+            "size": 51602,
+            "hash": "1959570df1209fa21d645f3945f12619ba3ffa52d6b9c738c6a65fe793b3c195"
+        },
+        {
+            "type": "file",
+            "name": "static/media/legowoman.b7783932c84ef8b9ccd2.jpg",
+            "size": 35460,
+            "hash": "c3ca9b1c574a591ab6edb7363151a6cd44010b7a01797a6fdfe42f1fae2a2df3"
+        },
+        {
+            "type": "file",
+            "name": "static/media/logo.449dc39cf8b7dee88307.png",
+            "size": 126408,
+            "hash": "abde5d8d7c5e68b5458a7c031534d22d4ed900516eec74207dc94641fcd09e5f"
+        },
+        {
+            "type": "file",
+            "name": "static/media/teens.e279d201336b282414d1.png",
+            "size": 62226,
+            "hash": "37876b16a8369c86ca5a2af4d5729afcee411db081010e05131204ac633cabf7"
+        }
+    ]
+}

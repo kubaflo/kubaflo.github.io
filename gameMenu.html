@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta name="verification" content="c80d298a797b2636c9ea927f84a0113f" />
+<meta charset="utf-8"/>
+<title>Just Games</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+<script src="jquery.scrollTo.min.js"></script>
+	<script type="text/javascript">
+	
+		var nr=0;
+			
+		function showMenu1()
+		{
+			document.getElementById("wysun1").style.opacity=1;document.getElementById("wysun1").style.visibility="visible";
+			document.getElementById("Single").innerHTML="SINGLE PLAYER";
+		}
+		
+		function hideMenu1()
+		{
+			document.getElementById("wysun1").style.opacity=0;document.getElementById("wysun1").style.visibility="hidden";
+			document.getElementById("Single").innerHTML="Single player";
+		}
+		
+		function pomalujpole1(){document.getElementById("mind").src="img/mind2.png";}
+		function odmalujpole1(){document.getElementById("mind").src="img/mind.png";}		
+		function pomalujpole2(){document.getElementById("joystick").src="img/joystick2.png";}
+		function odmalujpole2(){document.getElementById("joystick").src="img/joystick.png";}	
+		function pomalujpole3(){document.getElementById("gun").src="img/gun2.png";}
+		function odmalujpole3(){document.getElementById("gun").src="img/gun.png";}	
+		function pomalujpole4(){document.getElementById("race").src="img/race2.png";}
+		function odmalujpole4(){document.getElementById("race").src="img/race.png";}		
+		function pomalujins(){document.getElementById("ins").src="img/instagram-logo1.png";}
+		function odmalujins(){document.getElementById("ins").src="img/instagram-logo.png";}		
+		function pomalujfb(){document.getElementById("fb").src="img/facebook1.png";}
+		function odmalujfb(){document.getElementById("fb").src="img/facebook.png";}	
+		function pomalujgma(){document.getElementById("gma").src="img/gmail1.png";}
+		function odmalujgma(){document.getElementById("gma").src="img/gmail.png";}
+		
+		function changeSlajd()
+		{
+			
+			var napis;
+		
+			nr++;if(nr>4)nr=1;
+			
+			document.getElementById("slajd").src="img/"+nr+"slajd.png";
+			
+			if(nr==1)napis="Runner";
+			else if(nr==2)napis="War Tank";
+			else if(nr==3)napis="Policeman";
+			else if(nr==4)napis="Just Race";
+			
+			document.getElementById("napisIn").innerHTML=napis;
+			setTimeout("changeSlajd()",4000);
+		
+		}
+		
+		function changeSlajdInCategories(numerKategorii,numerSlajdu)
+		{
+		
+			
+				if(numerKategorii==1)
+				{
+					if(numerSlajdu==1){document.getElementById("firstPhotoInSlajd").src="img/runner.png";numerKategorii=2;document.getElementById( "firstTitleGame").innerHTML="Runner";}
+					else if(numerSlajdu==2){document.getElementById("firstPhotoInSlajd").src="img/mummy.png";numerKategorii=2;document.getElementById( "firstTitleGame").innerHTML="Mummy Maze";}
+					else if(numerSlajdu==3){document.getElementById("firstPhotoInSlajd").src="img/minecraft.png";numerKategorii=2;document.getElementById( "firstTitleGame").innerHTML="Jump Craft";}
+				}
+				else if(numerKategorii==2)
+				{
+					if(numerSlajdu==1){document.getElementById("secondPhotoInSlajd").src="img/roullete.png";numerKategorii=3;document.getElementById( "secondTitleGame").innerHTML="Roulette";}
+					else if(numerSlajdu==2){document.getElementById("secondPhotoInSlajd").src="img/4balls.png";numerKategorii=3;document.getElementById( "secondTitleGame").innerHTML="4 Balls";}
+					else if(numerSlajdu==3){document.getElementById("secondPhotoInSlajd").src="img/ball.png";numerKategorii=3;document.getElementById( "secondTitleGame").innerHTML="Ball Game";}
+				}
+				else if(numerKategorii==3)
+				{
+					if(numerSlajdu==1){document.getElementById("thirdPhotoInSlajd").src="img/justrace1.png";numerKategorii=4;document.getElementById( "thirdTitleGame").innerHTML="Just Race";}
+					else if(numerSlajdu==2){document.getElementById("thirdPhotoInSlajd").src="img/policeman.png";numerKategorii=4;document.getElementById( "thirdTitleGame").innerHTML="Policeman";}
+					else if(numerSlajdu==3){document.getElementById("thirdPhotoInSlajd").src="img/justrace.png";numerKategorii=4;document.getElementById( "thirdTitleGame").innerHTML="Just Race";}
+				}
+				else if(numerKategorii==4)
+				{
+					if(numerSlajdu==1){document.getElementById("fourthPhotoInSlajd").src="img/zombie.png";numerKategorii=1;document.getElementById( "fourthTitleGame").innerHTML="Zombie Hunter";}
+					if(numerSlajdu==2){document.getElementById("fourthPhotoInSlajd").src="img/ship.png";numerKategorii=1;document.getElementById( "fourthTitleGame").innerHTML="Space War";}
+					if(numerSlajdu==3){document.getElementById("fourthPhotoInSlajd").src="img/wartank1.png";numerKategorii=1;document.getElementById( "fourthTitleGame").innerHTML="War Tank";}
+				} 
+				numerSlajdu++;
+				if(numerSlajdu>3)numerSlajdu=1;
+				
+				setTimeout(changeSlajdInCategories,2000,numerKategorii,numerSlajdu);
+				
+			
+		
+		}
+		
+		jQuery(function($)
+		{
+		$.scrollTo(0);
+		
+		$('#mind').click(function(){$.scrollTo($('#thirdArticle'),500);});
+		$('#joystick').click(function(){$.scrollTo($('#thirdArticle'),500);});
+		$('#gun').click(function(){$.scrollTo($('#thirdArticle'),500);});
+		$('#race').click(function(){$.scrollTo($('#thirdArticle'),500);});
+		
+		
+		}
+		);
+			
+		function start()
+		{
+		 changeSlajdInCategories(1,1);
+		 changeSlajd();
+		}
+		
+		
+	</script>
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Frijole&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet"> 
+<meta name="description" content="Pograj sobie we wspaniałe mini gry przeznaczone dla wszystkich grup wiekowych LUB poczytaj sobie o ciekawostkach ze świata gier !!">
+<meta name="keywords" content="race, games, online, gra, komputerowa, zagraj, za darmo, free, ciekawostki o grach, minecraft, space war, mummy, maze, zabawa, gierki, historia gier">
+<link rel="icon" type="image/png" href="img/ico.png" sizes="64x64" />
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83136055-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Frijole&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+</style>
+	
+	
+</head>
+<body onload="start()">
+		<center><div id="kolor"><a href="index.html"><div id="title">
+			<center id="tit" style="font-family: 'Frijole', cursive;font-size:130px">Just Games<center>
+		</div></a></div></center>
+				<div id="menu2">
+				<center><ol>
+					<li onmouseover="showMenu1()" ><a id="Single" href="justrace/justrace.html">SINGLE PLAYER</a></li>
+					<li onmouseover="hideMenu1()"><a href="ball/ball.html">Pobierz grę</a></li>
+					<li onmouseover="hideMenu1()"><a href="historia.html">Historia gier</a></li>
+					<li onmouseover="hideMenu1()"><a href="wartank/wartank.html">Ciekawostki</a></li>
+				</ol></center>
+		</div>
+	<div id="container">
+
+				
+				<center>
+	
+
+				<div id="mainBox">
+				
+				
+							<div id="wysun1" style="opacity:1">
+				
+								<div id="kategorie">
+									<span id="Tie">KATEGORIE</span>
+									<div id="krecha"></div>
+									<a class="curs"><img onmouseover="pomalujpole1()"onmouseleave="odmalujpole1()" id ="mind"src="img/mind.png"/></a>
+									<a class="curs"><img onmouseover="pomalujpole2()"onmouseleave="odmalujpole2()" id ="joystick" src="img/joystick.png"/></a>
+									<a class="curs"><img onmouseover="pomalujpole3()"onmouseleave="odmalujpole3()" id ="gun" src="img/gun.png"/></a>
+									<a class="curs"><img onmouseover="pomalujpole4()"onmouseleave="odmalujpole4()" id ="race" src="img/race.png"/></a>
+									<span id="mindT">logiczne</span>
+									<span id="joystickT">zręcznościowe</span>
+									<span id="gunT">strzelanki</span>
+									<span id="raceT">samochodowe</span>
+				
+								</div>
+								
+									<div id="kategorie2">
+									<span id="Tie">NOWOŚCI...</span>
+									<div id="krecha2"></div>
+									
+									<div id="abs1">
+										<div id="rel1"><a href="justrace/justrace.html">
+											<img id="miniJustRace" src="img/justrace.png"/><div id="bac1"></div><span id="inPhoto">Just Race</span>
+										</a></div>
+									</div>											
+									
+									<div id="abs2">
+										<div id="rel1"><a href="zombie/zombie.html">
+											<img id="miniJustRace" src="img/zombie.png"/><div id="bac1"></div><span style="margin-left:10px;" id="inPhoto">Zombie Hunter</span>
+										</a></div>
+									</div>									
+																
+									
+									<div id="abs3">
+										<div id="rel1"><a href="mummymaze/mummymaze.html">
+											<img id="miniJustRace" src="img/mummy.png"/><div id="bac1"></div><span id="inPhoto3">Mummy Maze</span>
+										</a></div>
+									</div>
+				
+									<div id="abs4">
+										<div id="rel1"><a href="policeman/policeman.html">
+											<img id="miniJustRace" src="img/policeman.png"/><div id="bac1"></div><span id="inPhoto4">Policeman</span>
+										</a></div>
+									</div>
+									
+									<div id="abs5">
+										<div id="rel1"><a href="wartank/wartank.html">
+											<img id="miniJustRace" src="img/wartank.png"/><div id="bac1"></div><span id="inPhoto5">War Tank</span>
+										</a></div>
+									</div>
+									
+									<div id="abs6">
+										<div id="rel1"><a href="ship/ship.html">
+											<img id="miniJustRace" src="img/ship.png"/><div id="bac1"></div><span id="inPhoto6">Ship War</span>
+										</a></div>
+									</div>
+								</div>
+								
+								
+								<div id="kategorie3">
+									<span id="Tie">NAJLEPSZE...</span>
+									<div id="krecha3"></div>
+									<img id="slajd" src="img/justrace.png"/>
+									<span id="napisIn">Just Race</span>
+				
+								</div>
+								
+							</div>
+																													
+							<div id="firstArticle">
+							
+								<span class="inArticle"id="titleInArticle1">NOWOŚCI...</span>
+								<div id="krechaInArticle"></div>
+								<div id="oneLong"></div>
+								<div id="oneLong1"></div>
+								<div id="oneBig1"></div>
+								<div id="oneBig"></div>								
+								
+								<div style="margin-left:988px;" id="oneLong"></div>
+								<div style="margin-left:690px;" id="oneLong1"></div>
+								<div style="margin-left:830px;" id="oneBig1"></div>
+								<div style="margin-left:830px;" id="oneBig"></div>
+								
+											
+									<div id="article1">
+										<a href="roullete/roulette.html"><div id="photo1">
+											<img id="miniPhoto"src="img/roullete.png"/>
+											<div id="tloArticle"></div>
+											<span  style="margin-left:30px" id="tekstIn">Roulette</span>
+										</div></a>
+									</div>									
+									
+									<div id="article2">
+										<a href="ball/ball.html"><div id="photo1">
+											<img id="miniPhoto"src="img/ball.png"/>
+											<div id="tloArticle"></div>
+											<span  style="margin-left:30px" id="tekstIn">Ball Game</span>
+										</div></a>
+									</div>	
+									
+									<div id="article3">
+										<a href="zombie/zombie.html"><div id="photo1">
+											<img id="miniPhoto"src="img/zombie1.png"/>
+											<div id="tloArticle"></div>
+											<span  style="margin-left:30px" id="tekstIn">Zombie Hunter</span>
+										</div></a>
+									</div>									
+									
+									<div id="article4">
+										<a href="4balls/4balls.html"><div id="photo1">
+											<img id="miniPhoto"src="img/4balls.png"/>
+											<div id="tloArticle"></div>
+											<span style="margin-left:30px" id="tekstIn">4 Balls</span>
+										</div></a>
+									</div>
+							
+							</div>							
+							
+														<div id="new"><img id="new1" style="width:73px;margin-top:88px;margin-left:400px;" src="img/new.png"/>	</div>	
+							
+							<div id="secondArticle">
+							
+								<span class="inArticle"id="titleInArticle1">DLA CIEBIE...</span>
+								<div id="krechaInArticle"></div>
+									
+									<div id="article1">
+										<a href="justrace/justrace.html"><div id="photo1">
+											<img id="miniPhoto"src="img/justrace.png"/>
+											<div id="tloArticle"></div>
+											<span style="margin-left:30px" id="tekstIn">Just Race</span>
+										</div></a>
+									</div>									
+									
+									<div id="article2">
+										<a href="policeman/policeman.html"><div id="photo1">
+											<img id="miniPhoto"src="img/policeman.png"/>
+											<div id="tloArticle"></div>
+											<span style="margin-left:38px" id="tekstIn">Policeman</span>
+										</div></a>
+									</div>	
+									
+									<div id="article3">
+										<a href="mummymaze/mummymaze.html"><div id="photo1">
+											<img id="miniPhoto"src="img/mummy1.png"/>
+											<div id="tloArticle"></div>
+											<span  style="margin-left:30px" id="tekstIn">Mummy Maze</span>
+										</div></a>
+									</div>									
+									
+									<div id="article4">
+										<a href="minecraft/minecraft.html"><div id="photo1">
+											<img id="miniPhoto"src="img/minecraft.png"/>
+											<div  style="opacity:0.9;" id="tloArticle"></div>
+											<span  style="margin-left:30px" id="tekstIn">Jump Craft</span>
+										</div></a>
+									</div>
+							
+							</div>
+														
+														<div id="new2"><img id="new" style="margin-top:135px;width:73px;" src="img/find.png"/>	</div>									
+														<!---<div id="new4"><img id="newNerd" src="img/postt.png"/><span id="tekstInPost">NOWOŚCI</span><span id="tekstInPost1">DLA CIEBIE</span></div>	!---->
+														
+														
+							
+							<div id="thirdArticle">
+							
+								<span class="inArticle"id="titleInArticle1111">POLECANE...</span>
+								<div id="krechaInArticle2"></div>
+								
+									<div id="krechaDuza"></div>
+									
+									<div id="article11">
+										<a href="mummymaze/mummymaze.html"><div id="photo1">
+											<img id="bigPhoto"src="img/mummy.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Mummy Maze</span>
+										</div></a>
+									</div>									
+
+									<div id="article21">
+										<a href="wartank/wartank.html"><div id="photo1">
+											<img id="bigPhoto"src="img/wartank.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">War Tank</span>
+										</div></a>
+									</div>		
+									
+									<div id="article31">
+										<a href="ship/ship.html"><div id="photo1">
+											<img id="bigPhoto"src="img/ship.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Space War</span>
+										</div></a>
+									</div>						
+									
+									<div id="article41">
+										<a href="runner/runner.html"><div id="photo1">
+											<img id="bigPhoto"src="img/runner.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Runner</span>
+										</div></a>
+									</div>											
+
+							</div>
+							
+									<div id="new3"><img id="new" style="width:63px;margin-top:220px;" src="img/like.png"/>	</div>	
+														
+								<div id="fourthArticle">
+											
+									<span class="inArticle"id="titleInArticle111">KATEGORIE...</span>
+									<div id="krechaInArticle22"></div>	
+									
+									<div id="new5"><img id="newIn"src="img/joystick.png"/></div>		
+									
+									<div id="tloWhite">
+									<div id="article12">
+										<div id="photo1">
+											<img  id="firstPhotoInSlajd" class="bigPhotoIn"src="img/minecraft.png"/>
+											
+											<div id="tloArticle11"></div>
+											<span id="firstTitleGame" class="tekstIn11">Jump Craft</span>
+											
+										</div>
+									</div>									
+										
+								<span style="font-size:23px;margin-top:10px;" class="titleInArticle11">zręcznościowe</span>
+								
+											<div style="margin-top:270px" class="kreska"></div>
+											<div style="margin-top:310px" class="kreska"></div>
+											<div style="margin-top:350px" class="kreska"></div>
+											<a href="runner/runner.html"><span style="margin-top:240px" id="oneFirst">Runner</span></a>
+											<a href="mummymaze/mummymaze.html"><span style="margin-top:280px;" id="oneFirst">Mummy Maze</span></a>
+											<a href="minecraft/minecraft.html"><span style="margin-top:320px" id="oneFirst">Jump Craft</span></a>
+
+											<div id="ciemTlo"></div>
+							</div>					
+
+				</div>	
+				
+									<div id="new3"><img id="new" style="margin-top:495px; width:63px;" src="img/categ.png"/>	</div>	
+				
+									<div id="fifthArticle">
+											
+									
+									<div id="new5"><img id="newIn"src="img/mind.png"/></div>		
+									
+									<div id="tloWhite">
+									<div id="article12">
+										<div id="photo1">
+											<img  id="secondPhotoInSlajd" class="bigPhotoIn"src="img/ball.png"/>
+											
+											<div id="tloArticle11"></div>
+											<span id="secondTitleGame" class="tekstIn11">Ball Game</span>
+											
+										</div>
+									</div>									
+										
+								<span style="font-size:23px;margin-top:10px;" class="titleInArticle11">logiczne</span>
+											
+											<div style="margin-top:270px" class="kreska"></div>
+											<div style="margin-top:310px" class="kreska"></div>
+											<div style="margin-top:350px" class="kreska"></div>
+											<a href="roullete/roulette.html"><span style="margin-top:240px" id="oneFirst">Roulette</span></a>
+											<a href="4balls/4balls.html"><span style="margin-top:280px;" id="oneFirst">4 Balls</span></a>
+											<a href="ball/ball.html"><span style="margin-top:320px" id="oneFirst">Ball Game</span></a>
+
+											<div id="ciemTlo"></div>
+							</div>					
+
+				</div>	
+				
+								<div id="sixthArticle">
+											
+									
+									<div id="new5"><img id="newIn1"src="img/race.png"/></div>		
+									
+									<div id="tloWhite">
+									<div id="article12">
+										<div id="photo1">
+											<img id="thirdPhotoInSlajd"class="bigPhotoIn"src="img/justrace.png"/>
+											
+											<div id="tloArticle11"></div>
+											<span id="thirdTitleGame" class="tekstIn11">Just Race</span>
+											
+										</div>
+									</div>									
+										
+								<span style="font-size:23px;margin-top:10px;" class="titleInArticle11" id="car">samochodowe</span>
+								
+											<div style="margin-top:270px" class="kreska"></div>
+											<div style="margin-top:310px" class="kreska"></div>
+											<a href="justrace/justrace.html"><span style="margin-top:240px" id="oneFirst">Just race</span></a>
+											<a href="policeman/policeman.html"><span style="margin-top:280px;" id="oneFirst">Policeman</span></a>
+
+											<div id="ciemTlo"></div>
+							</div>					
+
+				</div>	
+				
+								<div id="seventhArticle">
+																			
+									<div id="new5"><img id="newIn"src="img/gun.png"/></div>		
+									
+									<div id="tloWhite">
+									<div id="article12">
+										<div id="photo1">
+											<img  id="fourthPhotoInSlajd" class="bigPhotoIn"src="img/wartank.png"/>
+											
+											<div id="tloArticle11"></div>
+											<span id="fourthTitleGame" class="tekstIn11">War Tank</span>
+											
+										</div>
+									</div>									
+										
+								<span style="font-size:23px;margin-top:10px;" class="titleInArticle11">strzelanki</span>
+								
+											<div style="margin-top:270px" class="kreska"></div>
+											<div style="margin-top:310px" class="kreska"></div>
+											<div style="margin-top:350px" class="kreska"></div>
+											<a href="zombie/zombie.html"><span style="margin-top:240px" id="oneFirst">Zombie Hunter</span></a>
+											<a href="ship/ship.html"><span style="margin-top:280px;" id="oneFirst">Space War</span></a>
+											<a href="wartank/wartank.html"><span style="margin-top:320px" id="oneFirst">War Tank</span></a>
+
+											<div id="ciemTlo"></div>
+							</div>					
+
+				</div>	
+				
+							<div id="new3"><img id="new" style="margin-top:1001px; width:73px; margin-left:35px;" src="img/alle.png"/>	</div>	
+				
+							<div id="eightArticle">
+							
+								<span class="inArticle"id="titleInArticle1111">WSZYSTKIE GRY...</span>
+								<div id="krechaInArticle2"></div>
+								
+									<div id="krechaDuza"></div><div style="margin-top:340px" id="krechaDuza"></div><div style="margin-top:540px" id="krechaDuza1"></div>
+									
+									<div id="article11">
+										<a href="justrace/justrace.html"><div id="photo1">
+											<img id="bigPhoto"src="img/justrace1.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Just Race</span>
+										</div></a>
+									</div>									
+
+									<div id="article21">
+										<a href="zombie/zombie.html"><div id="photo1">
+											<img id="bigPhoto"src="img/zombie1.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Zombie Hunter</span>
+										</div></a>
+									</div>		
+									
+									<div id="article31">
+										<a href="roullete/roulette.html"><div id="photo1">
+											<img id="bigPhoto"src="img/roullete.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Roulette</span>
+										</div></a>
+									</div>						
+									
+									<div id="article41">
+										<a href="4balls/4balls.html"><div id="photo1">
+											<img id="bigPhoto"src="img/4balls.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">4 Balls</span>
+										</div></a>
+									</div>										
+									
+									<div style="margin-top:200px" id="article11">
+										<a href="minecraft/minecraft.html"><div id="photo1">
+											<img id="bigPhoto"src="img/minecraft.png"/>
+											<div style="opacity:0.9;" id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Jump Craft</span>
+										</div></a>
+									</div>									
+
+									<div style="margin-top:200px" id="article21">
+										<a href="mummymaze/mummymaze.html"><div id="photo1">
+											<img id="bigPhoto"src="img/mummy.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Mummy Maze</span>
+										</div></a>
+									</div>		
+									
+									<div style="margin-top:200px" id="article31">
+										<a href="ball/ball.html"><div id="photo1">
+											<img id="bigPhoto"src="img/ball.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Ball Game</span>
+										</div></a>
+									</div>						
+									
+									<div style="margin-top:200px" id="article41">
+										<a href="policeman/policeman.html"><div id="photo1">
+											<img id="bigPhoto"src="img/policeman.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Policeman</span>
+										</div></a>
+									</div>	
+								
+
+									<div style="margin-top:400px;margin-left:150px;" id="article31">
+										<a href="wartank/wartank.html"><div id="photo1">
+											<img id="bigPhoto"src="img/wartank.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">War Tank</span>
+										</div></a>
+									</div>			
+
+									<div style="margin-top:400px;margin-left:150px;" id="article21">
+										<a href="ship/ship.html"><div id="photo1">
+											<img id="bigPhoto"src="img/ship.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Space War</span>
+										</div></a>
+									</div>		
+									
+									<div style="margin-top:400px;margin-left:150px;" id="article11">
+										<a href="runner/runner.html"><div id="photo1">
+											<img id="bigPhoto"src="img/runner.png"/>
+											<div id="tloArticle1"></div>
+											<span id="tekstIn1" style="margin-left:50px">Runner</span>
+										</div></a>
+									</div>
+																			
+
+							</div>
+							
+							<div id="foot">
+							
+							<span id="titleInFoot">KILKA SŁÓW O STRONIE...</span>
+							<span id="napisInFoot">Just Games to szybko rozwijająca się strona przeznaczona do uzytku na komputery. Jej tematyką są gry wideo ,w które każdy mże zagrać. Nowe gry są 
+							dodawane regularnie. Witryna przeznaczo jest dla osób w każdym wieku. Zapraszam do zagrania w znajdujące się na niej gry i dobrej zabawy</span>
+							
+							<span id="titleInFoot" style="margin-left:450px;">DODAJ SWOJĄ GRĘ...</span>
+							<span id="napisInFoot" style="margin-left:450px">Jeżeli chcesz ,aby twoja gra znalazła się na tej stronie to napisz na mail: kubaflo123@gmail.com. W tytule maila napisz gra.</span>
+							<a href="https://www.instagram.com/kubaflo/?hl=pl"><img  onmouseover="pomalujins()"onmouseleave="odmalujins()" id="ins"style="margin-left:710px;" class="social" src="img/instagram-logo.png"/></a>
+							<a href="https://www.facebook.com/jakub.florkowski"><img onmouseover="pomalujfb()"onmouseleave="odmalujfb()" id="fb"style="margin-left:620px"class="social" src="img/facebook.png"/></a>
+							<a href="mailto:kubaflo123@gmail.com"><img onmouseover="pomalujgma()"onmouseleave="odmalujgma()" id="gma" style="margin-left:530px" class="social" src="img/gmail.png"/></a>
+							
+							<div id="miniFoot"><span id="titleInFoot1">JUST GAMES-2017 &copy; WSZELKIE PRAWA ZASTRZEŻONE</span></div>
+							
+							</div>
+				
+
+		
+	</div>
+</body>
+</html>

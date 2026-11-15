@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Race Firebase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>   
+    <script src="app.js"></script>
+  </head>
+  <body>
+    
+    <img id="logo" src="https://storage.googleapis.com/the-race-com.appspot.com/1/the-race-logo-full-white-shadow.png"></img>
+
+    <form action="/">  
+      <div class="form-inner">
+        <h1>INSERT A NEW ARTICLE</h1>
+        <input id="title" type="text" placeholder="Title...">
+        <input id="image" type="text" placeholder="Image's url">
+        <input id="url" type="url" placeholder="Article's url">
+        <textarea id="shortContent" placeholder="Short content..." rows="2"></textarea>
+
+        <div id="tagsWrapper">
+            <input id="tagInput" type="text" placeholder="Tag...">
+            <button id="tagButton" type="button" onclick="addTag();">Add Tag</button>
+            <ul id="tagsList"></ul>
+        </div>
+        <button type="button" onclick="insertArticle();">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

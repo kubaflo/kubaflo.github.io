@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 style="color: #555; font-weight:bold">#Drawbook</h1>
+            <h3 style="color: #555;">To delete your account and data from the app,</h2>
+                <h3 style="color: #555;">please provide the credentials that you use to log in.</h2>
+                    <img id="logo" width="100px" src="logoWhite.png" />
+
+                    <form id="delete-account-form" class="form">
+                        <input type="text" id="username-input" placeholder="Username">
+                        <input id="password-input" type="password" placeholder="Password">
+                        <button id="delete-button" type="submit" id="login-button">Delete account</button>
+                    </form>
+        </div>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script type="module">
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyAsqlNbGc6ADfswvMJd-MDN8yeKmk496-o",
+            authDomain: "drawbook-27740.firebaseapp.com",
+            projectId: "drawbook-27740",
+            storageBucket: "drawbook-27740.appspot.com",
+            messagingSenderId: "870858504238",
+            appId: "1:870858504238:web:2194114bf34f3b4a8947bf",
+            measurementId: "G-M9E89WCGB7"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        function deleteAccount(event) {
+            event.preventDefault();
+            
+            var email = document.getElementById('username-input').value;
+            var password = document.getElementById('password-input').value;
+
+            const auth = getAuth();
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    userCredential.user.delete();
+                    console.log("success");
+                    alert("Your account has been successfully removed.");
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert("Apologies, but it seems that the credentials provided are incorrect. Please double-check your username and password and try again.");
+                });
+        }
+
+        document.getElementById('delete-account-form').addEventListener('submit', deleteAccount);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.722de7fa.css",
+    "main.js": "./static/js/main.b3306ffe.js",
+    "static/media/legoBricks.png": "./static/media/legoBricks.ffb3b65c5b9d71f42813.png",
+    "static/media/cerapro-bold.otf": "./static/media/cerapro-bold.23dd9a3e7a1b992dedb7.otf",
+    "static/media/cerapro-medium.otf": "./static/media/cerapro-medium.2bc02ae84a1e73c231d6.otf",
+    "static/media/cerapro-light.otf": "./static/media/cerapro-light.e46c8e0b3ab25af6d9eb.otf",
+    "static/media/logo.png": "./static/media/logo.449dc39cf8b7dee88307.png",
+    "static/media/lego-regular.ttf": "./static/media/lego-regular.84328578b281e20a0577.ttf",
+    "static/media/teens.png": "./static/media/teens.e279d201336b282414d1.png",
+    "static/media/kids.png": "./static/media/kids.c7bd18d008485f41f30d.png",
+    "static/media/legoman.jpg": "./static/media/legoman.9eb0129459344d877a4e.jpg",
+    "static/media/adults.png": "./static/media/adults.72c1c740b1a7965b15cc.png",
+    "static/media/legowoman.jpg": "./static/media/legowoman.b7783932c84ef8b9ccd2.jpg",
+    "index.html": "./index.html",
+    "main.722de7fa.css.map": "./static/css/main.722de7fa.css.map",
+    "main.b3306ffe.js.map": "./static/js/main.b3306ffe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.722de7fa.css",
+    "static/js/main.b3306ffe.js"
+  ]
+}

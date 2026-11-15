@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/launchpadtimetracker/static/css/main.35e699a8.css",
+    "main.js": "/launchpadtimetracker/static/js/main.7a3145e8.js",
+    "static/media/launchpad-icon.png": "/launchpadtimetracker/static/media/launchpad-icon.f2ae7bc34f7db1eb253b.png",
+    "static/media/launchpad-logo.svg": "/launchpadtimetracker/static/media/launchpad-logo.4356fa8322d20a6962de6f6f60ba6e93.svg",
+    "index.html": "/launchpadtimetracker/index.html",
+    "main.35e699a8.css.map": "/launchpadtimetracker/static/css/main.35e699a8.css.map",
+    "main.7a3145e8.js.map": "/launchpadtimetracker/static/js/main.7a3145e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35e699a8.css",
+    "static/js/main.7a3145e8.js"
+  ]
+}
